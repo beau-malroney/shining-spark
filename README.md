@@ -5,4 +5,6 @@ Ollama Private Chat bot
 `pip install pyttsx3`
 `pip install ollama`
 
-`streamlit run st_chat.py`
+`pip install reqs.txt`
+
+`streamlit run ./streamlit_app.py`
