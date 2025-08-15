@@ -70,7 +70,7 @@ def writeToFile(history):
     Path("./chat_history/").mkdir(parents=True, exist_ok=True)
     f = open("./chat_history/history.txt", "w")
     for h in history:
-        f.write(f"{h["role"]} : {h["content"]}\n\n")
+        f.write(f"{h['role']} : {h["content"]}\n\n")
     f.close()
     with open("./chat_history/pickled", "wb") as fp:
         pickle.dump(history, fp)
